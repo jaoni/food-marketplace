@@ -22,6 +22,18 @@ app.get("/restaurants", (req, res) => {
   res.json(restaurants);
 });
 
+app.get("/restaurants/:id", (req, res) => {
+  const id = Number(req.params.id);
+  const restaurant = restaurants.find((r) => r.id === id);
+
+  if (!restaurant) {
+    res.status(404).json({ error: "Restaurant not found" });
+    return;
+  }
+
+  res.json(restaurant);
+});
+
 const port = Number(process.env.PORT ?? 3000);
 
 app.listen(port, () => {
