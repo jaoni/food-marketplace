@@ -8,7 +8,7 @@ const MIGRATIONS_DIR = new URL("../../migrations/", import.meta.url);
 // so a failing migration leaves nothing half-applied.
 // Returns the filenames that were applied.
 export async function runMigrations(databaseUrl: string): Promise<string[]> {
-  const client = new Client({ connectionString: databaseUrl });
+  const client = new Client({ connectionString: databaseUrl, connectionTimeoutMillis: 5_000 });
   await client.connect();
 
   try {

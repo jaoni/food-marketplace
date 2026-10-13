@@ -17,4 +17,7 @@ function requireEnv(name: string): string {
 export const config = {
   port: Number(process.env.PORT ?? 3000),
   databaseUrl: requireEnv("DATABASE_URL"),
+  jwtSecret: requireEnv("JWT_SECRET"),
+  // bcrypt cost factor: each +1 doubles the time to hash. Tests lower it for speed.
+  bcryptRounds: Number(process.env.BCRYPT_ROUNDS ?? 12),
 };

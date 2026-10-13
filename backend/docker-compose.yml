@@ -1,3 +1,8 @@
+# Fixed project name. Without it, Compose names the project after this folder
+# ("backend"), and wouldn't find the existing container and data volume
+# created when this folder was still called food-backend.
+name: food-backend
+
 services:
   db:
     image: postgres:18-alpine

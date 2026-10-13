@@ -1,6 +1,6 @@
 // Fills the database with demo data. WARNING: deletes all existing data first.
-import bcrypt from "bcrypt";
 import { pool } from "../src/db/pool.ts";
+import { hashPassword } from "../src/services/authService.ts";
 
 if (process.env.NODE_ENV === "production") {
   throw new Error("Refusing to seed a production database.");
@@ -105,7 +105,7 @@ try {
 
   const userIds = new Map<string, number>();
   for (const user of users) {
-    const passwordHash = await bcrypt.hash(DEMO_PASSWORD, 10);
+    const passwordHash = await hashPassword(DEMO_PASSWORD);
     const id = await insert(
       "INSERT INTO users (email, password_hash, name, role) VALUES ($1, $2, $3, $4) RETURNING id",
       [user.email, passwordHash, user.name, user.role],

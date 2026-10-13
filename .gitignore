@@ -1,6 +1,9 @@
-node_modules/
-dist/
-coverage/
-.env
-*.log
+# backend/ and app/ have their own .gitignore files. This one covers files
+# created at the top level.
+
+# macOS Finder
 .DS_Store
+
+# IntelliJ / Android Studio, when the whole repository is opened
+.idea/
+*.iml
