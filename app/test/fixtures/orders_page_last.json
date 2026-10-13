@@ -1,0 +1,16 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "customerId": 4,
+      "restaurantId": 1,
+      "restaurantName": "Bella Napoli",
+      "status": "pending",
+      "deliveryAddress": "12 Main St",
+      "totalCents": 2450,
+      "createdAt": "2026-10-11T22:56:04.888Z",
+      "updatedAt": "2026-10-11T22:56:04.888Z"
+    }
+  ],
+  "nextCursor": null
+}

@@ -1,0 +1,57 @@
+{
+  "restaurantId": 1,
+  "categories": [
+    {
+      "id": 1,
+      "name": "Pizza",
+      "items": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "name": "Margherita",
+          "description": "Tomato, mozzarella, basil",
+          "priceCents": 1050,
+          "isAvailable": true
+        },
+        {
+          "id": 2,
+          "categoryId": 1,
+          "name": "Diavola",
+          "description": "Tomato, mozzarella, spicy salami",
+          "priceCents": 1250,
+          "isAvailable": true
+        },
+        {
+          "id": 3,
+          "categoryId": 1,
+          "name": "Quattro Formaggi",
+          "description": "Four cheeses",
+          "priceCents": 1350,
+          "isAvailable": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Drinks",
+      "items": [
+        {
+          "id": 4,
+          "categoryId": 2,
+          "name": "Lemonade",
+          "description": "Homemade",
+          "priceCents": 350,
+          "isAvailable": true
+        },
+        {
+          "id": 5,
+          "categoryId": 2,
+          "name": "Sparkling Water",
+          "description": "500 ml",
+          "priceCents": 250,
+          "isAvailable": true
+        }
+      ]
+    }
+  ]
+}

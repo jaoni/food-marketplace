@@ -1,0 +1,35 @@
+{
+  "id": 24,
+  "customerId": 4,
+  "restaurantId": 1,
+  "restaurantName": "Bella Napoli",
+  "status": "pending",
+  "deliveryAddress": "12 Main St",
+  "totalCents": 2450,
+  "createdAt": "2026-10-12T05:39:13.259Z",
+  "updatedAt": "2026-10-12T05:39:13.259Z",
+  "items": [
+    {
+      "menuItemId": 1,
+      "name": "Margherita",
+      "unitPriceCents": 1050,
+      "quantity": 2,
+      "lineTotalCents": 2100
+    },
+    {
+      "menuItemId": 4,
+      "name": "Lemonade",
+      "unitPriceCents": 350,
+      "quantity": 1,
+      "lineTotalCents": 350
+    }
+  ],
+  "statusHistory": [
+    {
+      "fromStatus": null,
+      "toStatus": "pending",
+      "changedBy": 4,
+      "createdAt": "2026-10-12T05:39:13.259Z"
+    }
+  ]
+}

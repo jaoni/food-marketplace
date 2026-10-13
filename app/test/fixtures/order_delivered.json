@@ -1,0 +1,58 @@
+{
+  "id": 18,
+  "customerId": 4,
+  "restaurantId": 1,
+  "restaurantName": "Bella Napoli",
+  "status": "delivered",
+  "deliveryAddress": "12 Main St",
+  "totalCents": 1050,
+  "createdAt": "2026-10-12T01:44:55.983Z",
+  "updatedAt": "2026-10-12T01:44:56.328Z",
+  "items": [
+    {
+      "menuItemId": 1,
+      "name": "Margherita",
+      "unitPriceCents": 1050,
+      "quantity": 1,
+      "lineTotalCents": 1050
+    }
+  ],
+  "statusHistory": [
+    {
+      "fromStatus": null,
+      "toStatus": "pending",
+      "changedBy": 4,
+      "createdAt": "2026-10-12T01:44:55.983Z"
+    },
+    {
+      "fromStatus": "pending",
+      "toStatus": "accepted",
+      "changedBy": 2,
+      "createdAt": "2026-10-12T01:44:56.135Z"
+    },
+    {
+      "fromStatus": "accepted",
+      "toStatus": "preparing",
+      "changedBy": 2,
+      "createdAt": "2026-10-12T01:44:56.165Z"
+    },
+    {
+      "fromStatus": "preparing",
+      "toStatus": "ready",
+      "changedBy": 2,
+      "createdAt": "2026-10-12T01:44:56.224Z"
+    },
+    {
+      "fromStatus": "ready",
+      "toStatus": "picked_up",
+      "changedBy": 6,
+      "createdAt": "2026-10-12T01:44:56.286Z"
+    },
+    {
+      "fromStatus": "picked_up",
+      "toStatus": "delivered",
+      "changedBy": 6,
+      "createdAt": "2026-10-12T01:44:56.328Z"
+    }
+  ]
+}

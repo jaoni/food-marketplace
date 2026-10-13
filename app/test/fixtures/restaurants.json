@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Bella Napoli",
+    "isOpen": true
+  },
+  {
+    "id": 2,
+    "name": "Tokyo Bowl",
+    "isOpen": true
+  },
+  {
+    "id": 3,
+    "name": "Green Garden",
+    "isOpen": false
+  }
+]
